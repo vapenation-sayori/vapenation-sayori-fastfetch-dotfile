@@ -1,0 +1,135 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|
+//
+//
+
+{
+    "logo": {
+        "type": "file-raw",
+        "source": "/home/vapenation/.config/fastfetch/logo.ans",
+        "width": 1,
+        "height": 1,
+        "padding": {
+            "top": 0,
+            "left": 0,
+            "right": 1
+        }
+    },
+    "display": {
+        "separator": " . "
+    },
+    "modules": [
+        {
+            "type": "title",
+            "format": "{1}@{2}"
+        },
+
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌──────────────────────────────◊──────────────────────────────┐\u001b[0m"
+        },
+
+        {
+            "type": "os",
+            "key": "dst",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "kernel",
+            "key": "krn",
+            "keyColor": "white"
+        },
+        {
+            "type": "dm",
+            "key": "log",
+            "keyColor": "white"
+        },
+        {
+            "type": "de",
+            "key": "dsk",
+            "keyColor": "white"
+        },
+         {
+            "type": "shell",
+            "key": "shl",
+            "keyColor": "green"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[90m├─────────────────────────────────────────────────────────────┤\u001b[0m"
+        },
+
+        {
+            "type": "cpu",
+            "key": "cpu",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "gpu",
+            "key": "gpu",
+            "keyColor": "white"
+        },
+        {
+            "type": "#display",
+            "key": "dsp",
+            "keyColor": "white"
+        },
+        {
+            "type": "memory",
+            "key": "ram",
+            "keyColor": "white"
+        },
+        {
+            "type": "#disk",
+            "key": "stg",
+            "keyColor": "green"
+        },
+        {
+            "type": "packages",
+            "key": "pkg",
+            "keyColor": "green"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[90m├─────────────────────────────────────────────────────────────┤\u001b[0m"
+        },
+
+        {
+            "type": "uptime",
+            "key": "upt",
+            "keyColor": "cyan"
+        },
+       {
+            "type": "command",
+            "key": "age",
+            "keyColor": "white",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "weather",
+            "key": "wth",
+            "keyColor": "white",
+            "timeout": 1500
+        },
+        {
+            "type": "terminal",
+            "key": "trm",
+            "keyColor": "white"
+        },
+        {
+            "type": "terminalfont",
+            "key": "fnt",
+            "keyColor": "green"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[90m└──────────────────────────────◊──────────────────────────────┘\u001b[0m"
+        }
+    ]
+}
